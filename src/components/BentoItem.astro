@@ -1,0 +1,91 @@
+---
+import GitHub from "./icons/GitHub.astro";
+import Link from "./icons/Link.astro";
+import LinkButton from "./LinkButton.astro";
+
+interface Props {
+  class?: string;
+  title: string;
+  subtitle?: string;
+  img: string;
+  description: string;
+  github?: string;
+  demo?: string;
+  tags: any[];
+}
+
+const { title, subtitle, img, description, github, demo, tags } = Astro.props;
+---
+
+<article
+  class={`
+  ${Astro.props.class}
+  col-span-5
+  relative rounded-xl
+  backdrop-blur-md
+  border border-white/30
+  shadow-inner shadow-black/10
+  overflow-hidden
+  group
+`}
+>
+  <div
+    class="absolute bottom-0 top-0 z-10 h-full w-full
+    bg-gradient-to-b from-transparent from-40% via-[#000]/50 to-[#000]/85"
+  >
+  </div>
+
+  <div
+    slot="image"
+    class="transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-black-950
+    bg-cover bg-center bg-no-repeat opacity-70 group-hover:opacity-15 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+    style=`background-image: url('${img}')`
+  >
+  </div>
+
+  <div
+    class="relative z-20 flex h-full select-none flex-col justify-end gap-1 p-2 text-lg md:p-6"
+  >
+    <h2 class="mb-4 text-balance text-3xl font-bold uppercase text-yellow-200">
+      {title}
+    </h2>
+
+    {
+      subtitle && (
+        <h3 class="-mt-4 mb-4 text-3xl font-semibold text-sky-200/80">
+          {subtitle}
+        </h3>
+      )
+    }
+
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      {description}
+    </p>
+    <div
+      slot="tecnologies"
+      class="flex gap-x-2 justify-start py-3 items-center flex-wrap"
+    >
+      {
+        tags.map((tag) => (
+          <span
+            class={`flex gap-x-2 rounded-full items-center text-xs ${tag.class} mt-2 py-1 px-2 `}
+          >
+            <tag.icon class="size-5" />
+            {tag.name}
+          </span>
+        ))
+      }
+    </div>
+    <div slot="links" class="flex justify-end gap-x-1 items-center">
+      <LinkButton href={github}>
+        <GitHub />
+        Code
+      </LinkButton>
+      <LinkButton href={demo}>
+        <Link />
+        Preview
+      </LinkButton>
+    </div>
+  </div>
+</article>
