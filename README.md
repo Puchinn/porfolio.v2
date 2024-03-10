@@ -1,3 +1,5 @@
-TODO:
+# Porfolio Personal
 
-- Actualizar el readme.
+![](public/porfolio.webp)
+
+### Inpispirado en [@midudev](https://github.com/midudev/porfolio.dev)
