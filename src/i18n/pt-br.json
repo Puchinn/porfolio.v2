@@ -1,9 +1,84 @@
 {
   "hero": {
-    "badge": "Disponivel para trabalhar",
-    "title": "Olá, Me chamo Esteban Sayago",
-    "about": "+2 años de experiencia. <strong>Desarrollador Web Full Stack</strong>. Comunicación efectiva, pensamiento crítico y toma de decisiones."
+    "badge": "Disponível para trabalhar.",
+    "title": "Olá, Sou Esteban Sayago",
+    "about": "<strong>Desenvolvedor Full Stack</strong>. Comunicação eficaz, pensamento crítico e tomada de decisões."
   },
-  "experiencia": [],
-  "proyectos": []
+  "experiencia": [
+    {
+      "date": "Jan 2024 - Mar 2024",
+      "title": "Desenvolvedor Back End",
+      "company": "No Country",
+      "description": "Desenvolvimento do MVP de uma empresa de gerenciamento de remessas. Participei do desenvolvimento do Back End, criando uma API REST, autenticação de usuários, gerenciamento e rastreamento de remessas. No Front End, melhorei os tempos de entrega do software e liderei a integração com o Back End."
+    },
+    {
+      "date": "Dez 2021 - Atualmente",
+      "title": "Desenvolvedor Full Stack",
+      "company": "Freelance",
+      "description": "Desde o desenvolvimento simples da Web usando HTML, CSS e JavaScript. Ao desenvolvimento de aplicativos Full-Stack com React, Express e bancos de dados NoSQL. Durante todo esse tempo, aprendi a aplicar as melhores práticas de codificação, a desenvolver fortes habilidades de resolução de problemas e a encontrar soluções.",
+      "link": "https://github.com/puchinn"
+    }
+  ],
+  "proyectos": [
+    {
+      "title": "Movies App",
+      "subtitle": "Janeiro 2023",
+      "description": "A realização desse projeto me ajudou a aprimorar minhas habilidades com os customs hooks de react, separação de responsabilidades, roteamento de páginas do cliente e como otimizar a busca de dados com tecnologias como o SWR.",
+      "img": "/projects/movies.webp",
+      "class": "col-span-10 md:col-span-4",
+      "tags": ["REACT", "REACTROUTER", "TAILWIND"],
+      "github": "https://github.com/Puchinn/Pagina-Peliculas",
+      "demo": "https://pagina-peliculas-zeta.vercel.app/"
+    },
+    {
+      "title": "Weather App",
+      "subtitle": "Setembro 2023",
+      "description": "Nesse projeto, apliquei meus conhecimentos sobre práticas recomendadas de código, como separar a lógica/componente em customs hooks de react, manter um código limpo e legível, separar as responsabilidades de cada componente e manter a ordem na estrutura do projeto.",
+      "img": "/projects/weather-app.webp",
+      "class": "col-span-10 md:col-span-6",
+      "tags": ["REACT", "REDUX", "REACTROUTER", "TAILWIND"],
+      "github": "https://github.com/Puchinn/weather-app",
+      "demo": "https://weather-app-puchinn.vercel.app/"
+    },
+    {
+      "title": "Grocery Food",
+      "subtitle": "Outubro 2023",
+      "description": "Food Delivery Landing Page: com essa página, eu queria me testar pegando um projeto criado no Figma, traduzindo-o em código e adicionando exibições responsivas usando apenas HTML e CSS.",
+      "img": "/projects/landing.webp",
+      "class": "col-span-10 md:col-span-6",
+      "tags": ["HTML", "CSS"],
+      "github": "https://github.com/Puchinn/lading-page",
+      "demo": "https://puchinn.github.io/lading-page/"
+    },
+    {
+      "title": "Markdown Previewer",
+      "subtitle": "Dezembro 2023",
+      "description": "Projeto para a certificação Front End Libraries do freeCodeCamp. Usando o React e a biblioteca marked para renderizar Markdown.",
+      "img": "/projects/md-previewer.webp",
+      "class": "col-span-10 md:col-span-4",
+      "tags": ["REACT", "MARKDOW"],
+      "github": "https://github.com/Puchinn/FreeCodeCamp-Ejercicios/tree/main/3-frontend-development-libraries-certification/2-markdow-previewer",
+      "demo": "https://free-code-camp-ejercicios.vercel.app/"
+    },
+    {
+      "title": "Encryptor",
+      "subtitle": "Abril 2023",
+      "description": "Um dos desafios do programa ONE da Oracle, um criptografador simples que usa JavaScript para aprimorar nossa lógica de programação.",
+      "img": "/projects/encripter.webp",
+      "class": "col-span-10 md:col-span-6",
+      "tags": ["HTML", "CSS", "JAVASCRIPT"],
+      "github": "https://github.com/Puchinn/Challenge-One",
+      "demo": "https://puchinn.github.io/Challenge-One/"
+    },
+    {
+      "title": "Memory game",
+      "subtitle": "Julho 2023",
+      "description": "Um jogo de memória ou jogo de combinação usando React. Nesse projeto, usei tópicos avançados de programação, como funções recursivas, para a geração dos tabuleiros.",
+      "img": "/projects/memory-game.webp",
+      "class": "col-span-10 md:col-span-4",
+      "tags": ["REACT", "CSS"],
+      "github": "https://github.com/Puchinn/juego-de-memoria",
+      "demo": "https://juego-de-memoria-fawn.vercel.app/"
+    }
+  ]
 }
