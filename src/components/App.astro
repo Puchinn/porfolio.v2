@@ -1,0 +1,58 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+import Tools from "@/components/icons/Tools.astro";
+import Briefcase from "@/components/icons/Briefcase.astro";
+import Bento from "@/components/Bento.astro";
+import CodeIcon from "@/components/icons/Code.astro";
+import Experience from "@/components/Experience.astro";
+import Technologies from "@/components/Technologies.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import Hero from "@/components/Hero.astro";
+
+import { getTranslation } from "@/i18n/ui";
+const { preferredLocale } = Astro;
+const { section } = getTranslation(preferredLocale);
+---
+
+<Layout
+  title="Porfolio de Esteban - Desarrollador y Programador Web"
+  description="Conoce a Esteban Sayago, su trayectoria y proyectos."
+>
+  <main class="px-4">
+    <SectionContainer class="py-16 md:py-36">
+      <Hero />
+    </SectionContainer>
+    <div class="space-y-24 px-4">
+      <SectionContainer id={section["experiencia-laboral"].id}>
+        <h2
+          class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+        >
+          <Briefcase class="size-8" />
+          {section["experiencia-laboral"].title}
+        </h2>
+        <Experience />
+      </SectionContainer>
+
+      <SectionContainer id={section.proyectos.id}>
+        <h2
+          class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+        >
+          <CodeIcon class="size-7" />
+          {section.proyectos.title}
+        </h2>
+      </SectionContainer>
+      <Bento />
+
+      <SectionContainer id={section.habilidades.id}>
+        <h2
+          class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+        >
+          <Tools class="size-8" />
+          {section.habilidades.title}
+        </h2>
+        <Technologies />
+      </SectionContainer>
+    </div>
+  </main>
+</Layout>

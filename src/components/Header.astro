@@ -1,19 +1,20 @@
 ---
+import { getTranslation } from "@/i18n/ui";
+
+const { preferredLocale } = Astro;
+const { nav } = getTranslation(preferredLocale);
 const navItems = [
   {
-    title: "Experiencia",
-    label: "experiencia",
-    url: "/#experiencia",
+    title: nav.experiencia.title,
+    url: nav.experiencia.url,
   },
   {
-    title: "Proyectos",
-    label: "proyectos",
-    url: "/#proyectos",
+    title: nav.proyectos.title,
+    url: nav.proyectos.url,
   },
   {
-    title: "Habilidades",
-    label: "habilidades",
-    url: "/#habilidades",
+    title: nav.habilidades.title,
+    url: nav.habilidades.url,
   },
 ];
 ---
@@ -28,7 +29,6 @@ const navItems = [
       navItems.map((link) => (
         <a
           class="relative block px-2 py-2 transition hover:text-yellow-500 dark:hover:text-yellow-400"
-          aria-label={link.label}
           href={link.url}
         >
           {link.title}

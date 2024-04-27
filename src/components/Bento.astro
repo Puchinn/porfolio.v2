@@ -1,138 +1,9 @@
 ---
 import BentoItem from "./BentoItem.astro";
-import NextJS from "./icons/NextJS.astro";
-import Tailwind from "./icons/Tailwind.astro";
-import ReactRouter from "./icons/ReactRouter.astro";
-import React from "./icons/React.astro";
-import Redux from "./icons/Redux.astro";
-import Html from "./icons/Html.astro";
-import Css from "./icons/Css.astro";
-import JavaScript from "./icons/JavaScript.astro";
-import Markdown from "./icons/Markdown.astro";
+import { getI18N } from "@/i18n";
 
-interface Project {
-  class?: string;
-  title: string;
-  subtitle?: string;
-  img: string;
-  description: string;
-  github?: string;
-  demo?: string;
-  tags: any[];
-}
-
-const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
-  },
-  TAILWIND: {
-    name: "Tailwind CSS",
-    class: "",
-    icon: Tailwind,
-  },
-  REACT: {
-    name: "React",
-    class: "",
-    icon: React,
-  },
-  REACTROUTER: {
-    name: "React Router",
-    class: "",
-    icon: ReactRouter,
-  },
-  REDUX: {
-    name: "Redux Toolkit",
-    icon: Redux,
-  },
-  HTML: {
-    name: "HTML",
-    icon: Html,
-  },
-  CSS: {
-    name: "CSS",
-    icon: Css,
-  },
-  JAVASCRIPT: {
-    name: "JavaScript",
-    icon: JavaScript,
-  },
-  MARKDOW: {
-    name: "Markdown",
-    icon: Markdown,
-  },
-};
-
-const PROJECTS: Project[] = [
-  {
-    title: "Movies App",
-    subtitle: "Enero 2023",
-    description:
-      "Realizar este proyecto me ayudó a mejorar mis habilidades con customs hooks, la separación de responsabilidades, hacer el routing de páginas desde el cliente, y cómo optimizar el fetching de datos con tecnologías como SWR.",
-    img: "/projects/movies.webp",
-    class: "col-span-10 md:col-span-4",
-    tags: [TAGS.REACT, TAGS.REACTROUTER, TAGS.TAILWIND],
-    github: "https://github.com/Puchinn/Pagina-Peliculas",
-    demo: "https://pagina-peliculas-zeta.vercel.app/",
-  },
-  {
-    title: "Weather App",
-    subtitle: "Septiembre 2023",
-    description:
-      "En este proyecto apliqué mis conocimientos de mejores prácticas de código, tales como la separación de la lógica/componente en customs hooks, mantener un código limpio y legible, separa las responsabilidades de cada componente y mantener el orden en la estructura del proyecto.",
-    img: "/projects/weather-app.webp",
-    class: "col-span-10 md:col-span-6",
-    tags: [TAGS.REACT, TAGS.REDUX, TAGS.REACTROUTER, TAGS.TAILWIND],
-    github: "https://github.com/Puchinn/weather-app",
-    demo: "https://weather-app-puchinn.vercel.app/",
-  },
-  {
-    title: "Grocery Food",
-    subtitle: "Octubre 2023",
-    description:
-      "Landing Page de Delivery de Comidas, con esta página quise ponerme a prueba tomando un proyecto creado en Figma, traducirlo a código y agregarle vistas responsivas utilizando solo HTML y CSS.",
-    img: "/projects/landing.webp",
-    class: "col-span-10 md:col-span-6",
-    tags: [TAGS.HTML, TAGS.CSS],
-    github: "https://github.com/Puchinn/lading-page",
-    demo: "https://puchinn.github.io/lading-page/",
-  },
-  {
-    title: "Markdown Previewer",
-    subtitle: "Diciembre 2023",
-    description:
-      "Proyecto para certificación Front End Libraries de freeCodeCamp. Utilizando React y la librería marked para renderizar Markdown.",
-    img: "/projects/md-previewer.webp",
-    class: "col-span-10 md:col-span-4",
-    tags: [TAGS.REACT, TAGS.MARKDOW],
-    github:
-      "https://github.com/Puchinn/FreeCodeCamp-Ejercicios/tree/main/3-frontend-development-libraries-certification/2-markdow-previewer",
-    demo: "https://free-code-camp-ejercicios.vercel.app/",
-  },
-  {
-    title: "Encriptador",
-    subtitle: "Abril 2023",
-    description:
-      "Uno de los desafíos del programa ONE de Oracle, un encriptador simple utilizando JavaScript para mejorar nuestra lógica de programación.",
-    img: "/projects/encripter.webp",
-    class: "col-span-10 md:col-span-6",
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
-    github: "https://github.com/Puchinn/Challenge-One",
-    demo: "https://puchinn.github.io/Challenge-One/",
-  },
-  {
-    title: "Juego de memoria",
-    subtitle: "Julio 2023",
-    description:
-      "Un juego de memoria o de buscar pareja utilizando React, en este proyecto he utilizado tópicos avanzados de la programación como funciones recursivas para la generación de los tableros.",
-    img: "/projects/memory-game.webp",
-    class: "col-span-10 md:col-span-4",
-    tags: [TAGS.REACT, TAGS.CSS],
-    github: "https://github.com/Puchinn/juego-de-memoria",
-    demo: "https://juego-de-memoria-fawn.vercel.app/",
-  },
-];
+const { preferredLocale } = Astro;
+const { proyectos } = getI18N(preferredLocale);
 ---
 
 <section
@@ -143,7 +14,7 @@ const PROJECTS: Project[] = [
   `}
 >
   {
-    PROJECTS.map((project) => (
+    proyectos.map((project) => (
       <BentoItem
         title={project.title}
         subtitle={project.subtitle}

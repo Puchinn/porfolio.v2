@@ -31,6 +31,7 @@ const TRANSLATIONS = {
     footer: {
       content: ". Casi todos los derechos reservados.",
     },
+    "experiencia.button": "Saber más",
   },
   en: {
     nav: {
@@ -64,6 +65,7 @@ const TRANSLATIONS = {
     footer: {
       content: ". All rights reserved.",
     },
+    "experiencia.button": "More info",
   },
   "pt-br": {
     nav: {
@@ -97,6 +99,7 @@ const TRANSLATIONS = {
     footer: {
       content: ". Todos os direitos reservados.",
     },
+    "experiencia.button": "Mais informações",
   },
 };
 
