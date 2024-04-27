@@ -1,27 +1,14 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro";
-const EXPERIENCIE = [
-  {
-    date: "Jan 2024 - Mar 2024",
-    title: "Full Stack Developer",
-    company: "No Country",
-    description:
-      "Desarrollo MVP de una empresa de gestión de envíos. Participe en el desarrollo Back-end, creando una API REST, autenticación de usuarios, gestión y rastreo de envíos. En el Front-end mejore los tiempos de entrega de software y encabece la integración con el Back-end.",
-  },
-  {
-    date: "Dec 2021 - Actual",
-    title: "Desarrollador Independiente",
-    company: "Autónomo",
-    description:
-      "Desde desarrollo de páginas webs simples utilizando HTML, CSS y JavaScript. Hasta el desarrollo de aplicaciones Full-Stack con React, Express y Bases de datos NoSQL. Durante todo este tiempo he aprendido a aplicar las mejores prácticas de código, desarrollar una fuerte capacidad de solucionar problemas y buscar soluciones.",
-    link: "https://github.com/puchinn",
-  },
-];
+import { getI18N } from "@/i18n";
+
+const { preferredLocale } = Astro;
+const { experiencia } = getI18N(preferredLocale);
 ---
 
 <ol class="relative mt-16">
   {
-    EXPERIENCIE.map((experiencie) => (
+    experiencia.map((experiencie) => (
       <li class="">
         <ExperienceItem {...experiencie} />
       </li>

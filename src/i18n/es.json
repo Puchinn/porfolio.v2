@@ -1,6 +1,9 @@
 {
   "hero": {
     "badge": "Dispoible para trabajar",
-    "title": "Hola, Soy Esteban Sayago"
-  }
+    "title": "Hola, Soy Esteban Sayago",
+    "about": "<strong>Desarrollador Web Full Stack</strong>. Comunicación efectiva, pensamiento crítico y toma de decisiones."
+  },
+  "experiencia": [],
+  "proyectos": []
 }

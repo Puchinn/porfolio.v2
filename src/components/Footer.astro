@@ -1,4 +1,7 @@
 ---
+import { getTranslation } from "@/i18n/ui";
+const { preferredLocale } = Astro;
+const { footer } = getTranslation(preferredLocale);
 const currentYear = new Date().getFullYear();
 ---
 
@@ -13,7 +16,7 @@ const currentYear = new Date().getFullYear();
       <a
         href="https://www.linkedin.com/in/esteban-sayago/"
         class="hover:underline">Esteban Sayago</a
-      >. Casi todos los derechos reservados.
+      >{footer.content}
     </span>
     <ul
       class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"

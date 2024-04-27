@@ -3,6 +3,63 @@ import GitHub from "./icons/GitHub.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
 
+import NextJS from "./icons/NextJS.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import ReactRouter from "./icons/ReactRouter.astro";
+import React from "./icons/React.astro";
+import Redux from "./icons/Redux.astro";
+import Html from "./icons/Html.astro";
+import Css from "./icons/Css.astro";
+import JavaScript from "./icons/JavaScript.astro";
+import Markdown from "./icons/Markdown.astro";
+
+interface TAGS {
+  [key: string]: any;
+}
+
+const TAGS: TAGS = {
+  NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "",
+    icon: Tailwind,
+  },
+  REACT: {
+    name: "React",
+    class: "",
+    icon: React,
+  },
+  REACTROUTER: {
+    name: "React Router",
+    class: "",
+    icon: ReactRouter,
+  },
+  REDUX: {
+    name: "Redux Toolkit",
+    icon: Redux,
+  },
+  HTML: {
+    name: "HTML",
+    icon: Html,
+  },
+  CSS: {
+    name: "CSS",
+    icon: Css,
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    icon: JavaScript,
+  },
+  MARKDOW: {
+    name: "Markdown",
+    icon: Markdown,
+  },
+};
+
 interface Props {
   class?: string;
   title: string;
@@ -67,14 +124,17 @@ const { title, subtitle, img, description, github, demo, tags } = Astro.props;
       class="flex gap-x-2 justify-start py-3 items-center flex-wrap"
     >
       {
-        tags.map((tag) => (
-          <span
-            class={`flex gap-x-2 rounded-full items-center text-xs ${tag.class} mt-2 py-1 px-2 `}
-          >
-            <tag.icon class="size-5" />
-            {tag.name}
-          </span>
-        ))
+        tags.map((t) => {
+          const tag = TAGS[t];
+          return (
+            <span
+              class={`flex gap-x-2 rounded-full items-center text-xs ${tag.class} mt-2 py-1 px-2 `}
+            >
+              <tag.icon class="size-5" />
+              {tag.name}
+            </span>
+          );
+        })
       }
     </div>
     <div slot="links" class="flex justify-end gap-x-1 items-center">
