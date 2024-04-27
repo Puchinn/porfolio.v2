@@ -25,7 +25,6 @@ jobs:
         with:
           node-version: 20
           package-manager: pnpm@v8.10.2
-          path: .
 
   deploy:
     needs: build
