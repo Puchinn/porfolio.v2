@@ -1,8 +1,9 @@
 ---
 import { getTranslation } from "@/i18n/ui";
+import { getLangInURL } from "@/i18n";
 
-const { preferredLocale } = Astro;
-const { nav } = getTranslation(preferredLocale);
+const lang = getLangInURL(Astro.url);
+const { nav } = getTranslation(lang);
 const navItems = [
   {
     title: nav.experiencia.title,

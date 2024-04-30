@@ -1,6 +1,7 @@
 ---
 import LinkInline from "./LinkInline.astro";
 import { getTranslation } from "@/i18n/ui";
+import { getLangInURL } from "@/i18n";
 
 interface Props {
   title: string;
@@ -11,8 +12,8 @@ interface Props {
 }
 
 const { title, company, description, link, date } = Astro.props;
-const { preferredLocale } = Astro;
-const translations = getTranslation(preferredLocale);
+const lang = getLangInURL(Astro.url);
+const translations = getTranslation(lang);
 ---
 
 <div

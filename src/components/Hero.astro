@@ -5,10 +5,10 @@ import LinkedInIcon from "@/components/icons/LinkedIn.astro";
 import GitHub from "./icons/GitHub.astro";
 import MailIcon from "@/components/icons/Mail.astro";
 import SocialPill from "@/components/SocialPill.astro";
-import { getI18N } from "@/i18n";
+import { getI18N, getLangInURL } from "@/i18n";
 
-const { preferredLocale } = Astro;
-const { hero } = getI18N(preferredLocale);
+const lang = getLangInURL(Astro.url);
+const { hero } = getI18N(lang);
 ---
 
 <div class="max-w-2xl">
