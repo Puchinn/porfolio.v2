@@ -1,7 +1,8 @@
 ---
 import { getTranslation } from "@/i18n/ui";
-const { preferredLocale } = Astro;
-const { footer } = getTranslation(preferredLocale);
+import { getLangInURL } from "@/i18n";
+const lang = getLangInURL(Astro.url);
+const { footer } = getTranslation(lang);
 const currentYear = new Date().getFullYear();
 ---
 

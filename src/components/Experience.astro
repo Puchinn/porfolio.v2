@@ -1,9 +1,9 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro";
-import { getI18N } from "@/i18n";
+import { getI18N, getLangInURL } from "@/i18n";
 
-const { preferredLocale } = Astro;
-const { experiencia } = getI18N(preferredLocale);
+const lang = getLangInURL(Astro.url);
+const { experiencia } = getI18N(lang);
 ---
 
 <ol class="relative mt-16">

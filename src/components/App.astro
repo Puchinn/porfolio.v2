@@ -11,13 +11,16 @@ import SectionContainer from "@/components/SectionContainer.astro";
 import Hero from "@/components/Hero.astro";
 
 import { getTranslation } from "@/i18n/ui";
-const { preferredLocale } = Astro;
-const { section } = getTranslation(preferredLocale);
+import { getI18N, getLangInURL } from "@/i18n";
+const lang = getLangInURL(Astro.url);
+const { section } = getTranslation(lang);
+const { layout } = getI18N(lang);
 ---
 
 <Layout
-  title="Porfolio de Esteban - Desarrollador y Programador Web"
-  description="Conoce a Esteban Sayago, su trayectoria y proyectos."
+  title={layout.title}
+  description={layout.description}
+  lang={layout.lang}
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
@@ -56,3 +59,5 @@ const { section } = getTranslation(preferredLocale);
     </div>
   </main>
 </Layout>
+
+<script></script>

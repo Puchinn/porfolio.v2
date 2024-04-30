@@ -80,5 +80,10 @@
       "github": "https://github.com/Puchinn/juego-de-memoria",
       "demo": "https://juego-de-memoria-fawn.vercel.app/"
     }
-  ]
+  ],
+  "layout": {
+    "title": "Portfólio de Esteban - Desenvolvedor e programador da Web",
+    "description": "Conheça Esteban Sayago, sua carreira e seus projetos.",
+    "lang": "pt-br"
+  }
 }

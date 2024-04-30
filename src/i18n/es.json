@@ -1,6 +1,6 @@
 {
   "hero": {
-    "badge": "Dispoible para trabajar",
+    "badge": "Disponible para trabajar.",
     "title": "Hola, Soy Esteban Sayago",
     "about": "<strong>Desarrollador Web Full Stack</strong>. Comunicación efectiva, pensamiento crítico y toma de decisiones."
   },
@@ -80,5 +80,10 @@
       "github": "https://github.com/Puchinn/juego-de-memoria",
       "demo": "https://juego-de-memoria-fawn.vercel.app/"
     }
-  ]
+  ],
+  "layout": {
+    "title": "Porfolio de Esteban - Desarrollador y Programador Web",
+    "description": "Conoce a Esteban Sayago, su trayectoria y proyectos.",
+    "lang": "es"
+  }
 }

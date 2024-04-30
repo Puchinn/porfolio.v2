@@ -37,15 +37,15 @@ const TRANSLATIONS = {
     nav: {
       experiencia: {
         title: "Experience",
-        url: "/#experience",
+        url: "/en#experience",
       },
       proyectos: {
         title: "Projects",
-        url: "/#projects",
+        url: "/en#projects",
       },
       habilidades: {
         title: "Skills",
-        url: "/#skills",
+        url: "/en#skills",
       },
     },
     section: {
@@ -71,15 +71,15 @@ const TRANSLATIONS = {
     nav: {
       experiencia: {
         title: "Experiência",
-        url: "/#experiencia",
+        url: "/pt-br#experiencia",
       },
       proyectos: {
         title: "Projetos",
-        url: "/#projetos",
+        url: "/pt-br#projetos",
       },
       habilidades: {
         title: "Habilidades",
-        url: "/#habilidades",
+        url: "/pt-br#habilidades",
       },
     },
     section: {
