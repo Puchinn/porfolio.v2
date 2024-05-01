@@ -13,6 +13,9 @@ const TRANSLATIONS = {
         title: "Habilidades",
         url: "/#habilidades",
       },
+      lang: {
+        actual: "ES",
+      },
     },
     section: {
       "experiencia-laboral": {
@@ -47,6 +50,9 @@ const TRANSLATIONS = {
         title: "Skills",
         url: "/en#skills",
       },
+      lang: {
+        actual: "EN",
+      },
     },
     section: {
       "experiencia-laboral": {
@@ -80,6 +86,9 @@ const TRANSLATIONS = {
       habilidades: {
         title: "Habilidades",
         url: "/pt-br#habilidades",
+      },
+      lang: {
+        actual: "PT",
       },
     },
     section: {
