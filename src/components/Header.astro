@@ -1,6 +1,7 @@
 ---
 import { getTranslation } from "@/i18n/ui";
 import { getLangInURL } from "@/i18n";
+import ToggleLanguaje from "./ToggleLanguaje.astro";
 
 const lang = getLangInURL(Astro.url);
 const { nav } = getTranslation(lang);
@@ -24,18 +25,19 @@ const navItems = [
   class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
 >
   <nav
-    class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center"
+    class="flex px-3 text-sm font-medium rounded-full text-gray-200 justify-center items-center"
   >
     {
       navItems.map((link) => (
         <a
-          class="relative block px-2 py-2 transition hover:text-yellow-500 dark:hover:text-yellow-400"
+          class="relative block px-2 py-2 transition hover:text-yellow-400"
           href={link.url}
         >
           {link.title}
         </a>
       ))
     }
+    <ToggleLanguaje />
   </nav>
 </header>
 
