@@ -2,18 +2,24 @@
   "hero": {
     "badge": "Disponible para trabajar.",
     "title": "Hola, Soy Esteban Sayago",
-    "about": "<strong>Desarrollador Web Full Stack</strong>. Comunicación efectiva, pensamiento crítico y toma de decisiones."
+    "about": "<strong>Desarrollador Web Fullstack</strong>. Apasionado por crear productos digitales increíbles."
   },
   "experiencia": [
     {
-      "date": "Ene 2024 - Mar 2024",
-      "title": "Desarrollador Back End",
+      "date": "Mar 2024 - Abr 2024",
+      "title": "Desarrollador Backend",
       "company": "No Country",
-      "description": "Desarrollo MVP de una empresa de gestión de envíos. Participe en el desarrollo Back-end, creando una API REST, autenticación de usuarios, gestión y rastreo de envíos. En el Front-end mejore los tiempos de entrega de software y encabece la integración con el Back-end."
+      "description": "Desarrollo de API REST con NestJS, integración de modelos de inteligencia artificial de OpenAI, realización de las funcionalidades de generación de texto y audio con IA. Lanzamos con éxito TalkIAmos, superando expectativas y llegando a No Country como proyecto escalable y presentable en un Demo Day con empresas."
+    },
+    {
+      "date": "Ene 2024 - Mar 2024",
+      "title": "Desarrollador Backend",
+      "company": "No Country",
+      "description": "Desarrollo de API REST, creación de modelos y esquemas en MongoDB, sugerir mejoras y optimizaciones de código, solución de problemas de integración. Además, tuve participación en el frontend donde realicé la integración con el backend y mejoré de forma directa la entrega de software."
     },
     {
       "date": "Dic 2021 - Actualmente",
-      "title": "Desarrollador Full Stack",
+      "title": "Desarrollador Fullstack",
       "company": "Freelance",
       "description": "Desde desarrollo de páginas webs simples utilizando HTML, CSS y JavaScript. Hasta el desarrollo de aplicaciones Full-Stack con React, Express y Bases de datos NoSQL. Durante todo este tiempo he aprendido a aplicar las mejores prácticas de código, desarrollar una fuerte capacidad de solucionar problemas y buscar soluciones.",
       "link": "https://github.com/puchinn"
@@ -23,7 +29,7 @@
     {
       "title": "Movies App",
       "subtitle": "Enero 2023",
-      "description": " Realizar este proyecto me ayudó a mejorar mis habilidades con customs hooks, la separación de responsabilidades, hacer el routing de páginas desde el cliente, y cómo optimizar el fetching de datos con tecnologías como SWR. ",
+      "description": "Página de películas que te permite buscar, explorar resúmenes, descubrir a los actores principales y ver trailers. ¡Todo lo que necesitas para encontrar tu próxima película favorita en un solo lugar!",
       "img": "/projects/movies.webp",
       "class": "col-span-10 md:col-span-4",
       "tags": ["REACT", "REACTROUTER", "TAILWIND"],
@@ -33,7 +39,7 @@
     {
       "title": "Weather App",
       "subtitle": "Septiembre 2023",
-      "description": "En este proyecto apliqué mis conocimientos de mejores prácticas de código, tales como la separación de la lógica/componente en customs hooks, mantener un código limpio y legible, separa las responsabilidades de cada componente y mantener el orden en la estructura del proyecto. ",
+      "description": "Aplicación para consultar el clima actual, obténer pronósticos para los próximos días, así como detalles adicionales como humedad, presión, velocidad del viento, índice UV y probabilidad de lluvia.",
       "img": "/projects/weather-app.webp",
       "class": "col-span-10 md:col-span-6",
       "tags": ["REACT", "REDUX", "REACTROUTER", "TAILWIND"],
@@ -43,7 +49,7 @@
     {
       "title": "Grocery Food",
       "subtitle": "Octubre 2023",
-      "description": "Landing Page de Delivery de Comidas, con esta página quise ponerme a prueba tomando un proyecto creado en Figma, traducirlo a código y agregarle vistas responsivas utilizando solo HTML y CSS. ",
+      "description": "Transformé un diseño hecho en Figma en un sitio web de un restaurante de entrega de comidas.",
       "img": "/projects/landing.webp",
       "class": "col-span-10 md:col-span-6",
       "tags": ["HTML", "CSS"],
@@ -73,7 +79,7 @@
     {
       "title": "Juego de memoria",
       "subtitle": "Julio 2023",
-      "description": "Un juego de memoria o de buscar pareja utilizando React, en este proyecto he utilizado tópicos avanzados de la programación como funciones recursivas para la generación de los tableros. ",
+      "description": "Un juego de memoria o de buscar pareja utilizando React.",
       "img": "/projects/memory-game.webp",
       "class": "col-span-10 md:col-span-4",
       "tags": ["REACT", "CSS"],

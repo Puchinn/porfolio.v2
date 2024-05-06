@@ -2,14 +2,20 @@
   "hero": {
     "badge": "Disponível para trabalhar.",
     "title": "Olá, Sou Esteban Sayago",
-    "about": "<strong>Desenvolvedor Full Stack</strong>. Comunicação eficaz, pensamento crítico e tomada de decisões."
+    "about": "<strong>Desenvolvedor Fullstack</strong>. Apaixonado por criar produtos digitais incríveis."
   },
   "experiencia": [
     {
-      "date": "Jan 2024 - Mar 2024",
-      "title": "Desenvolvedor Back End",
+      "date": "Mar 2024 - Abr 2024",
+      "title": "Desenvolvedor Backend",
       "company": "No Country",
-      "description": "Desenvolvimento do MVP de uma empresa de gerenciamento de remessas. Participei do desenvolvimento do Back End, criando uma API REST, autenticação de usuários, gerenciamento e rastreamento de remessas. No Front End, melhorei os tempos de entrega do software e liderei a integração com o Back End."
+      "description": "Desenvolvimento de API REST com NestJS, integração de modelos de inteligência artificial OpenAI, implementação de funcionalidades de geração de texto e áudio com IA. Lançamos o TalkIAmos com sucesso, superando as expectativas e alcançando o No Country como um projeto escalável e apresentável em um Demo Day com empresas."
+    },
+    {
+      "date": "Jan 2024 - Mar 2024",
+      "title": "Desenvolvedor Backend",
+      "company": "No Country",
+      "description": "Desenvolvimento de APIs REST, criação de modelos e esquemas no MongoDB, sugestão de melhorias e otimizações de código, solução de problemas de integração. Além disso, participei do frontend, onde fiz a integração com o backend e melhorei diretamente a entrega do software."
     },
     {
       "date": "Dez 2021 - Atualmente",
@@ -23,7 +29,7 @@
     {
       "title": "Movies App",
       "subtitle": "Janeiro 2023",
-      "description": "A realização desse projeto me ajudou a aprimorar minhas habilidades com os customs hooks de react, separação de responsabilidades, roteamento de páginas do cliente e como otimizar a busca de dados com tecnologias como o SWR.",
+      "description": "Site de filmes que permite pesquisar, navegar por resumos, descobrir os principais atores e assistir a trailers - tudo o que você precisa para encontrar seu próximo filme favorito em um só lugar!",
       "img": "/projects/movies.webp",
       "class": "col-span-10 md:col-span-4",
       "tags": ["REACT", "REACTROUTER", "TAILWIND"],
@@ -33,7 +39,7 @@
     {
       "title": "Weather App",
       "subtitle": "Setembro 2023",
-      "description": "Nesse projeto, apliquei meus conhecimentos sobre práticas recomendadas de código, como separar a lógica/componente em customs hooks de react, manter um código limpo e legível, separar as responsabilidades de cada componente e manter a ordem na estrutura do projeto.",
+      "description": "Aplicativo para verificar o tempo atual, obter previsões para os próximos dias, bem como detalhes adicionais, como umidade, pressão, velocidade do vento, índice UV e probabilidade de chuva.",
       "img": "/projects/weather-app.webp",
       "class": "col-span-10 md:col-span-6",
       "tags": ["REACT", "REDUX", "REACTROUTER", "TAILWIND"],
@@ -43,7 +49,7 @@
     {
       "title": "Grocery Food",
       "subtitle": "Outubro 2023",
-      "description": "Food Delivery Landing Page: com essa página, eu queria me testar pegando um projeto criado no Figma, traduzindo-o em código e adicionando exibições responsivas usando apenas HTML e CSS.",
+      "description": "Transformei um design feito no Figma em um site para um restaurante de entrega de alimentos.",
       "img": "/projects/landing.webp",
       "class": "col-span-10 md:col-span-6",
       "tags": ["HTML", "CSS"],
@@ -73,7 +79,7 @@
     {
       "title": "Memory game",
       "subtitle": "Julho 2023",
-      "description": "Um jogo de memória ou jogo de combinação usando React. Nesse projeto, usei tópicos avançados de programação, como funções recursivas, para a geração dos tabuleiros.",
+      "description": "Um jogo de memória usando React.",
       "img": "/projects/memory-game.webp",
       "class": "col-span-10 md:col-span-4",
       "tags": ["REACT", "CSS"],

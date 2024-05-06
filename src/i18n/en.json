@@ -2,18 +2,24 @@
   "hero": {
     "badge": "Available for work.",
     "title": "Hi, I'm Esteban Sayago",
-    "about": "<strong>Full Stack Developer</strong>. Effective communication, critical thinking and decision making."
+    "about": "<strong>Fullstack Developer</strong>. Passionate about creating amazing digital products."
   },
   "experiencia": [
     {
-      "date": "Jan 2024 - Mar 2024",
-      "title": "Back End Developer",
+      "date": "Mar 2024 - Apr 2024",
+      "title": "Backend Developer",
       "company": "No Country",
-      "description": "MVP development of a shipping management company. Participate in Back End development, creating a REST API, user authentication, shipment management and tracking. On the Front End improve software delivery times and lead the integration with the Back End."
+      "description": "Developing REST APIs with NestJS, integrating OpenAI's artificial intelligence models, and implementing text and audio generation features using AI. Successfully launched TalkIAmos, exceeding expectations and positioning itself as a scalable and compelling project at a Demo Day with corporate partners."
+    },
+    {
+      "date": "Jan 2024 - Mar 2024",
+      "title": "Backend Developer",
+      "company": "No Country",
+      "description": "Development of RESTful APIs, creation of models and schemas in MongoDB, suggesting code improvements and optimizations, resolving integration issues. Additionally, I contributed to the frontend, where I integrated with the backend and directly enhanced software delivery."
     },
     {
       "date": "Dec 2021 - Current",
-      "title": "Full Stack Developer",
+      "title": "FullStack Developer",
       "company": "Freelance",
       "description": "From simple web development using HTML, CSS and JavaScript. To Full Stack application development with React, Express and NoSQL databases. During all this time I have learned to apply best coding practices, develop strong problem solving skills and search for solutions.",
       "link": "https://github.com/puchinn"
@@ -23,7 +29,7 @@
     {
       "title": "Movies App",
       "subtitle": "January 2023",
-      "description": "Doing this project helped me to improve my skills with customs hooks, separation of responsibilities, page routing from the client, and how to optimize data fetching with technologies like SWR.",
+      "description": "Movie site that allows you to search, browse summaries, discover the main actors and watch trailers everything you need to find your next favorite movie in one place!",
       "img": "/projects/movies.webp",
       "class": "col-span-10 md:col-span-4",
       "tags": ["REACT", "REACTROUTER", "TAILWIND"],
@@ -33,7 +39,7 @@
     {
       "title": "Weather App",
       "subtitle": "September 2023",
-      "description": "In this project I applied my knowledge of code best practices, such as separating logic/component in customs hooks, keeping a clean and readable code, separating the responsibilities of each component and keeping order in the project structure.",
+      "description": "Application to check the current weather, get forecasts for the next few days, as well as additional details such as humidity, pressure, wind speed, UV index and probability of rain.",
       "img": "/projects/weather-app.webp",
       "class": "col-span-10 md:col-span-6",
       "tags": ["REACT", "REDUX", "REACTROUTER", "TAILWIND"],
@@ -43,7 +49,7 @@
     {
       "title": "Grocery Food",
       "subtitle": "October 2023",
-      "description": "Food Delivery Landing Page, with this page I wanted to test myself by taking a project created in Figma, translate it to code and add responsive views using only HTML and CSS.",
+      "description": "I transformed a design made in Figma into a food delivery restaurant website.",
       "img": "/projects/landing.webp",
       "class": "col-span-10 md:col-span-6",
       "tags": ["HTML", "CSS"],
@@ -73,7 +79,7 @@
     {
       "title": "Memory game",
       "subtitle": "July 2023",
-      "description": "A memory game or matchmaking game using React, in this project I have used advanced programming topics such as recursive functions for the generation of the boards.",
+      "description": "A memory game using React.",
       "img": "/projects/memory-game.webp",
       "class": "col-span-10 md:col-span-4",
       "tags": ["REACT", "CSS"],
