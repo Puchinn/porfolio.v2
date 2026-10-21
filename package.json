@@ -1,23 +1,36 @@
 {
-  "name": "porfolio-dev",
-  "type": "module",
-  "version": "0.0.1",
-  "packageManager": "pnpm@8.10.2",
+  "name": "esteban-sayago",
+  "version": "3.0.0",
+  "private": true,
+  "packageManager": "pnpm@12.14.0",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@astrojs/check": "0.9.6",
-    "@astrojs/tailwind": "^5.1.0",
-    "@astrojs/vercel": "^7.5.4",
-    "@fontsource-variable/onest": "5.0.2",
-    "astro": "^5.x.x",
-    "astro-robots-txt": "1.0.0",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.7.0"
+    "@vercel/analytics": "2.0.1",
+    "@vercel/speed-insights": "2.0.0",
+    "lucide-react": "1.61.0",
+    "next": "16.4.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "resend": "6.34.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.2",
+    "sharp": "^0.35.5",
+    "tailwindcss": "4.3.3",
+    "typescript": "6.0.3"
   }
 }

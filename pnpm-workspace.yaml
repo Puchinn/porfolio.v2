@@ -1,0 +1,7 @@
+minimumReleaseAgeExclude:
+  - lucide-react@1.61.0
+
+allowBuilds:
+  "@tailwindcss/oxide": true
+  sharp: true
+  unrs-resolver: true
